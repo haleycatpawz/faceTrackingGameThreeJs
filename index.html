@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediaPipe FaceLandmarker & Three.js AR Demo</title>
+
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>AR Face Tracking with Three.js & Mediapipe</h1>
+
+    <section id="demos" class="invisible">
+        <p>Hold your face in front of your webcam to get real-time face landmarker detection.</br>Click <b>enable webcam</b> below and grant access to the webcam if prompted.</p>
+        
+        <div id="liveView" class="videoView">
+            <button id="webcamButton" class="mdc-button mdc-button--raised">
+                <span class="mdc-button__ripple"></span>
+                <span class="mdc-button__label">ENABLE PREDICTIONS</span>
+            </button>
+            <div id="ar-container">
+                <video id="webcam" autoplay playsinline></video>
+                <canvas id="output_canvas" class="output_canvas"></canvas>
+                <canvas id="threejs_canvas"></canvas>
+            </div>
+        </div>
+      
+    </section>
+    
+    <script src="main.js" type="module"></script>
+</body>
+</html>
