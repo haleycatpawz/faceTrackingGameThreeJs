@@ -5,6 +5,7 @@ import {
     FaceLandmarker, FilesetResolver, DrawingUtils
 } from "https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.3";
 
+//import * from help
 // --- DOM elements and state variables ---
 const demosSection = document.getElementById("demos");
 const video = document.getElementById("webcam");

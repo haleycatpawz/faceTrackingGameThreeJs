@@ -88,6 +88,9 @@ section {
 #threejs_canvas {
     z-index: 2; /* Three.js 3D objects on the top layer */
     pointer-events: none; /* Allows mouse events to pass through */
+    border: 5px solid #302047;
+    height: fit-content;
+    width: 50px;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -110,8 +113,8 @@ section {
 .blend-shapes {
     position: relative;
     float: left;
-    width: 48%;
-    margin: 2% 1%;
+    width: 100%;
+    margin: 0%;
     cursor: pointer;
 }
 
